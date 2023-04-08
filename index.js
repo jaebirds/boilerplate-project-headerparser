@@ -31,8 +31,6 @@ var listener = app.listen(process.env.PORT || 3000, function () {
 
 app.get('/api/whoami', function (req, res) {
 
-  //console.log(req);
-
   res.json({
     ipaddress: req.socket.remoteAddress,
     language: req.headers["accept-language"],
